@@ -1809,7 +1809,7 @@ local autoExecSupported = (queue_on_teleport ~= nil)
 local AUTO_EXEC_FOLDER = FOLDER
 local AUTO_EXEC_FILE = AUTO_EXEC_FOLDER .. "/AutoDungeon.file"
 local AUTO_EXEC_QUEUE_FLAG = "__DungeonAutoExecQueued"
-local AUTO_EXEC_URL = ""
+local AUTO_EXEC_URL = "https://raw.githubusercontent.com/nr7a/t/refs/heads/main/kaitun_dungeon"
 local AutoExecLoader = 'getgenv()["' .. AUTO_EXEC_QUEUE_FLAG .. '"] = false\n'
     .. 'if isfile("' .. AUTO_EXEC_FILE .. '") and readfile("' .. AUTO_EXEC_FILE .. '") == "true" then\n'
     .. '    local targetUrl = "' .. AUTO_EXEC_URL .. '"\n'
